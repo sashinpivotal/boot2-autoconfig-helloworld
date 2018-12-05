@@ -6,16 +6,10 @@ plugins {
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-actuator'
-    // TODO-02: Review hello-app project. Note that it has dependency
-    //          on hello-lib project
+    // TODO-03: Review "hello-app" project. Note that it has dependency
+    //          on "hello-lib" project
     compile project(':hello-lib')
-    // TODO-08: Replace compile project(':hello-lib') with compile project(':hello-starter')
-
-    // TODO-09: Study the following
-    // Note that hello-starter has a transitive dependency on
-    // hello-lib. This is similar to the way that many Spring Boot
-    // starters have dependencies on the library (or libraries)
-    // that they configure.
+    // TODO-09: Replace compile project(':hello-lib') above with compile project(':hello-starter')
 
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 }

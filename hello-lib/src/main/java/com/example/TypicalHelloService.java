@@ -1,7 +1,8 @@
 package com.example;
 
-// TODO-01: Review hello-lib project - it is just
-//          a library that contains TypicalHelloService
+// TODO-02: Review "hello-lib" project - it is just
+//          a library that contains "TypicalHelloService"
+//          as shown below.
 public class TypicalHelloService implements HelloService {
     @Override
     public void greet() {

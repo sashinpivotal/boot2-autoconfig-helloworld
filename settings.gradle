@@ -1,3 +1,4 @@
+// TODO-01: Note that there are three sub-projects
 include 'hello-app'
 include 'hello-starter'
 include 'hello-lib'
