@@ -1,5 +1,6 @@
-package com.example;
+package com.app;
 
+import com.lib.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

@@ -4,8 +4,7 @@ plugins {
 }
 
 dependencies {
-    compile 'org.springframework.boot:spring-boot-starter-web'
-    compile 'org.springframework.boot:spring-boot-starter-actuator'
+    compile 'org.springframework.boot:spring-boot-starter'
     // TODO-03: Review "hello-app" project. Note that it has dependency
     //          on "hello-lib" project
     compile project(':hello-lib')

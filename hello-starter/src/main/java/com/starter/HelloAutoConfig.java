@@ -1,5 +1,7 @@
-package com.example;
+package com.starter;
 
+import com.lib.HelloService;
+import com.lib.TypicalHelloService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

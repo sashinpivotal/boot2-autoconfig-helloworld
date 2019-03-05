@@ -1,10 +1,10 @@
-package com.example;
+package com.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 // TODO-05: Run the application and you will experience a
-//          failure of "'com.example.HelloService' that could not be found"
+//          failure of "'HelloService' that could not be found"
 // TODO-06: Fix the problem (add @Bean definition of "HelloService")
 //          and run it again and verify it works
 
@@ -30,8 +30,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //          We will fix it in later steps.
 // TODO-16: Run the application again and see which one wins
 //          This time, MyOwnHelloService should win
-// TODO-17: Using browser, go to http://localhost:8080/actuator/conditions
-//          and search for "HelloAutoConfig" 
+
 @SpringBootApplication
 public class HelloApplication {
 

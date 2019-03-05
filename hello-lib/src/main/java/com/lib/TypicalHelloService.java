@@ -1,4 +1,4 @@
-package com.example;
+package com.lib;
 
 // TODO-02: Review "hello-lib" project - it is just
 //          a library that contains "TypicalHelloService"
