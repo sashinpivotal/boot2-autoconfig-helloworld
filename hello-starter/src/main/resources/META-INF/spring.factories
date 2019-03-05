@@ -2,4 +2,4 @@
 #          under src/main/resources/META-INF directory.
 #          Add "com.starter.HelloAutoConfig" (without quotes)
 #          to the right of the equal(=) sign
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.starter.HelloAutoConfig

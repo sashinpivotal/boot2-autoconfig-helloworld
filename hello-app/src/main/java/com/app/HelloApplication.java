@@ -26,6 +26,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //          Rebuild the whole application and then run it.
 //          Note that The "HelloService" bean ("TypicalHelloService") is
 //          now contributed by the "hello-starter".
+//          At this point, "hello-starter" is nothing more than
+//          a library. It does not perform any auto-configuration.
+//
 // TODO-13: Create "MyOwnHelloService" Bean under "com.app" directory
 //          And create new configuration class called
 //          "HelloAppConfig" under "com.config" directory
@@ -35,10 +38,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //          just below @SpringBootApplication.
 //          And run the application and observe that which one
 //          ("MyOwnHelloService" or "TypicalHelloService") wins.
-//          Observe that "TypicalHelloService" wins.
-//          We will fix it in later steps.
+//          Observe that "TypicalHelloService" always wins.
+//          Now we would like to change it so that if the
+//          "TypicalHelloService" gets configured only when the
+//          "hello-app" did not have its own "HelloService" bean.
+//
 // TODO-16: Run the application again and see which one wins
 //          This time, MyOwnHelloService should win
+
+// TODO-17: In the console, search for "HelloAutoConfig" and
+//          see how auto-configuration is performed
 
 @SpringBootApplication
 
@@ -47,6 +56,6 @@ public class HelloApplication {
   public static void main(String[] args) {
     SpringApplication.run(HelloApplication.class, args);
   }
-  
+
 }
 
