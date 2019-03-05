@@ -1,6 +1,6 @@
 package com.lib;
 
-// TODO-02: Review "hello-lib" project - it is just
+// TODO-12: Review "hello-lib" project - it is just
 //          a library that contains "TypicalHelloService"
 //          as shown below.
 public class TypicalHelloService implements HelloService {

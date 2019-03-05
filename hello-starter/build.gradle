@@ -4,7 +4,7 @@ plugins {
 
 dependencies {
   compile 'org.springframework.boot:spring-boot-starter'
-  // TODO-10: Note that hello-starter has a transitive dependency on
+  // TODO-23: Note that hello-starter has a transitive dependency on
   // hello-lib. This is similar to the way that many Spring Boot
   // starters have dependencies on the library (or libraries)
   // that they configure.

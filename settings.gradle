@@ -1,4 +1,9 @@
-// TODO-01: Note that there are three sub-projects
+// TODO-10: This lab is made of 3 parts
+// Part #1: "hello-app" uses "TypicalHelloService" bean from "hello-lib" project directly
+// Part #2: "hello-app" uses "TypicalHelloService" bean via "hello-starter" project
+// Part #3: Make "hello-starter" a Spring Boot starter with auto-configuration
+
+// TODO-11: Note that there are three sub-projects
 include 'hello-app'
 include 'hello-starter'
 include 'hello-lib'

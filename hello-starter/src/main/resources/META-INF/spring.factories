@@ -1,5 +1,5 @@
-# TODO-14: Note that hello-starter has "spring.factories" file
+# TODO-32: Note that hello-starter has "spring.factories" file
 #          under src/main/resources/META-INF directory.
 #          Add "com.starter.HelloAutoConfig" (without quotes)
 #          to the right of the equal(=) sign
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.starter.HelloAutoConfig
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=
