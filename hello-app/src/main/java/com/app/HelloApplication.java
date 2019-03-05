@@ -20,8 +20,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 // TODO-08: Comment out the explicit @Bean configuration you just
 //          added in Step 06 above
 //
-// TODO-12: Rebuild the whole application and then run the application.
-//          Note that The "HelloService" bean is
+// TODO-12: Import the configuration by adding the following statement
+//          @Import({HelloAutoConfig.class})
+//          just below @SpringBootApplication.
+//          Rebuild the whole application and then run it.
+//          Note that The "HelloService" bean ("TypicalHelloService") is
 //          now contributed by the "hello-starter".
 // TODO-13: Create "MyOwnHelloService" Bean under "com.app" directory
 //          And create new configuration class called
@@ -29,7 +32,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //          and configure "MyOwnHelloService" bean using @Bean method.
 //          Then add the following to this application.
 //          @Import({HelloAppConfig.class, HelloAutoConfig.class})
-//          below @SpringBootApplication.
+//          just below @SpringBootApplication.
 //          And run the application and observe that which one
 //          ("MyOwnHelloService" or "TypicalHelloService") wins.
 //          Observe that "TypicalHelloService" wins.
@@ -38,11 +41,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //          This time, MyOwnHelloService should win
 
 @SpringBootApplication
+
 public class HelloApplication {
 
   public static void main(String[] args) {
     SpringApplication.run(HelloApplication.class, args);
   }
-
+  
 }
 
