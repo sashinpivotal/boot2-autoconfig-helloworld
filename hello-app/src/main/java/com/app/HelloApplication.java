@@ -14,7 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //          "hello-lib" project.
 
 // TODO-21: Comment out the explicit @Bean configuration you just
-//          added in Step 06 above
+//          added in the previous step
 //
 // TODO-25: Import the configuration class of "hello-starter"
 //          - Add the following statement
