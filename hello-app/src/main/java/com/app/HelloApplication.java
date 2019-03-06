@@ -29,7 +29,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 // TODO-26: Now we are going to define application provided HelloService bean
 //          - Create "MyOwnHelloService" Bean under "com.app" directory
 //          - Create new configuration class called
-//            "HelloAppConfig" under "com.config" directory
+//            "HelloAppConfig" under "com.config" package
 //          - Configure "MyOwnHelloService" bean using @Bean method.
 //          - Import "HelloAppConfig" configuration class by replacing
 //            existing @Import statement with
