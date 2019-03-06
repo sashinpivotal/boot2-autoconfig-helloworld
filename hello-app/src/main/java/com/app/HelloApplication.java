@@ -8,28 +8,26 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 // TODO-16: Fix the problem (add @Bean definition of "HelloService")
 //          and run it again and verify it works
 
-// TODO-20: Now we are ready to leverage spring Boot starter.
-// When we use a Spring Boot starter, we often start out without
-// configuring any beans. The starter sets them up for us.
-// For example, "spring-boot-starter-jdbc" can automatically
-// configure a "JdbcTemplate" bean.
-//
-// We’d like to do the same: let’s have the "hello-starter"
-// automatically contribute the "HelloService" bean
-// so that we don’t have to in "hello-app".
+// TODO-20: Now we are ready to leverage "hello-starter" project.
+//          First, we want to configure "TypicalHelloService" bean
+//          via "hello-starter" project instead of directly from
+//          "hello-lib" project.
+
 // TODO-21: Comment out the explicit @Bean configuration you just
 //          added in Step 06 above
 //
-// TODO-25: Import the configuration by adding the following statement
-//          @Import({HelloAutoConfig.class})
-//          just below @SpringBootApplication.
-//          Rebuild the whole application and then run it.
-//          Note that The "HelloService" bean ("TypicalHelloService") is
-//          now contributed by the "hello-starter".
-//          At this point, "hello-starter" is nothing more than
-//          a library. It does not perform any auto-configuration.
+// TODO-25: Import the configuration class of "hello-starter"
+//          - Add the following statement
+//            @Import({HelloAutoConfig.class})
+//            just below @SpringBootApplication statement
+//          - Rebuild the whole application and then run it.
+//            Note that The "HelloService" bean ("TypicalHelloService") is
+//            now contributed by the "hello-starter".
+//            At this point, "hello-starter" is nothing more than
+//            a library. It does not perform any auto-configuration.
 //
-// TODO-26: Create "MyOwnHelloService" Bean under "com.app" directory
+// TODO-26: Now we are going to define application provided HelloService  bean
+//          - Create "MyOwnHelloService" Bean under "com.app" directory
 //          - Create new configuration class called
 //            "HelloAppConfig" under "com.config" directory
 //          - Configure "MyOwnHelloService" bean using @Bean method.
