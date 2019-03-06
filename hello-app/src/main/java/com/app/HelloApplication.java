@@ -20,11 +20,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //          - Add the following statement
 //            @Import({HelloAutoConfig.class})
 //            just below @SpringBootApplication statement
-//          - Rebuild the whole application and then run it.
-//            Note that The "HelloService" bean ("TypicalHelloService") is
+//          - Run the application
+//          - Note that The "HelloService" bean ("TypicalHelloService") is
 //            now contributed by the "hello-starter".
 //            At this point, "hello-starter" is nothing more than
-//            a library. It does not perform any auto-configuration yey.
+//            a library. It does not perform any auto-configuration yet.
 //
 // TODO-26: Now we are going to define application provided HelloService bean
 //          - Create "MyOwnHelloService" Bean under "com.app" directory
@@ -75,6 +75,6 @@ public class HelloApplication {
   public static void main(String[] args) {
     SpringApplication.run(HelloApplication.class, args);
   }
-
+  
 }
 
