@@ -24,16 +24,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //            Note that The "HelloService" bean ("TypicalHelloService") is
 //            now contributed by the "hello-starter".
 //            At this point, "hello-starter" is nothing more than
-//            a library. It does not perform any auto-configuration.
+//            a library. It does not perform any auto-configuration yey.
 //
-// TODO-26: Now we are going to define application provided HelloService  bean
+// TODO-26: Now we are going to define application provided HelloService bean
 //          - Create "MyOwnHelloService" Bean under "com.app" directory
 //          - Create new configuration class called
 //            "HelloAppConfig" under "com.config" directory
 //          - Configure "MyOwnHelloService" bean using @Bean method.
-//          - Import "HelloAppConfig" configuration class by adding
+//          - Import "HelloAppConfig" configuration class by replacing
+//            existing @Import statement with
 //            @Import({HelloAppConfig.class, HelloAutoConfig.class})
-//            just below @SpringBootApplication.
 //          - Run the application and observe that "TypicalHelloService"
 //            always wins.
 //
@@ -41,11 +41,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //          last, in this case, "TypicalHelloService" bean from the
 //          "HelloAutoConfig" class.
 //
-//          You can change the order of bean loading by switching the
-//          two configuration classes lie
-//          @Import({HelloAutoConfig.class, HelloAppConfig.class})
-//          then run the application. This time, you will always see
-//          "MyOwnHelloService" bean always wins.
+//          - Change the order of bean loading by switching the
+//            two configuration classes like
+//            @Import({HelloAutoConfig.class, HelloAppConfig.class})
+//          - Run the application. This time, you will always see
+//            "MyOwnHelloService" bean always wins.
 //
 // TODO-30: Now we would like to change the behavior through
 //          auto-configuration so that the
@@ -53,7 +53,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //          application did not provide its own "HelloService" bean.
 //
 // TODO-31: Remove "HelloAutoConfig.class" from @Import statement
-//          So the the import statement should look like following
+//          So the the import statement should look like
 //          @Import({HelloAppConfig.class})
 //
 // TODO-35: Run the application again and see which one wins
