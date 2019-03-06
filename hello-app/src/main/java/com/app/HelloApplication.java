@@ -61,13 +61,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //          This time, "MyOwnHelloService" bean should win.
 
 // TODO-36: In the console, search for "HelloAutoConfig" and
-//          see how auto-configuration is performed
-//
+//          see how auto-configuration is performed.
+//          You should see the one positive match and one negative match.
+
 // TODO-37: Comment out @Import statement and run the application
 //          and observe that "TypicalHelloService" bean wins.
 //
 // TODO-38: In the console, search for "HelloAutoConfig" and
-//          see how auto-configuration is performed
+//          see how auto-configuration is performed.
+//          This time, you should see the two positive matches.
 
 @SpringBootApplication
 
