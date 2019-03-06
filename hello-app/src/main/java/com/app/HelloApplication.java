@@ -39,7 +39,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //
 //          At this point, Spring picks up a bean that is loaded
 //          last, in this case, "TypicalHelloService" bean from the
-//          "HelloAutoConfig" class.
+//          "HelloAutoConfig" class always wins because beans defined
+//          in the "HelloAutoConfig" are loaded last.
 //
 //          - Change the order of bean loading by switching the
 //            two configuration classes like
@@ -50,10 +51,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 // TODO-30: Now we would like to change the behavior through
 //          auto-configuration so that the
 //          "TypicalHelloService" gets configured only when the
-//          application did not provide its own "HelloService" bean.
+//          application did not provide its "MyOwnHelloService" bean.
 //
 // TODO-31: Remove "HelloAutoConfig.class" from @Import statement
-//          So the the import statement should look like
+//          So now the import statement should look like
 //          @Import({HelloAppConfig.class})
 //
 // TODO-35: Run the application again and see which one wins
@@ -75,6 +76,6 @@ public class HelloApplication {
   public static void main(String[] args) {
     SpringApplication.run(HelloApplication.class, args);
   }
-  
+
 }
 
