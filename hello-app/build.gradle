@@ -5,8 +5,8 @@ plugins {
 
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter'
-    // TODO-13: Review "hello-app" project. Note that it has dependency
-    //          on "hello-lib" project
+    // TODO-13: Study "hello-app" project.
+    //          Note that it has dependency on "hello-lib" project
     compile project(':hello-lib')
     // TODO-22: Replace compile project(':hello-lib') above with compile project(':hello-starter')
 
