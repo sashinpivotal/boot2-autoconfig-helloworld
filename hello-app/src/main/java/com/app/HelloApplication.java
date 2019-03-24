@@ -5,8 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 // TODO-15: Run the application and you will experience a
 //          failure of "'HelloService' that could not be found"
-// TODO-16: Fix the problem (add @Bean definition of "HelloService")
-//          and run it again and verify it works
+// TODO-16: Fix the problem (add @Bean definition of "HelloService"
+//          with Bean id "helloService") and run it again,
+//          verify it works
 
 // TODO-20: Now we are ready to leverage "hello-starter" project.
 //          First, we want to configure "TypicalHelloService" bean
