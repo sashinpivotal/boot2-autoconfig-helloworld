@@ -1,7 +1,10 @@
 package com.app;
 
+import com.lib.HelloService;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 // TODO-15: Run the application and you will experience a
 //          failure of "'HelloService' that could not be found"
@@ -78,6 +81,16 @@ public class HelloApplication {
 
   public static void main(String[] args) {
     SpringApplication.run(HelloApplication.class, args);
+  }
+
+  // TODO-14: Review CommandLineRunner code below
+  //          in which you are going to say greeting via
+  //          injected HelloService
+  @Bean
+  public CommandLineRunner commandLineRunner(HelloService helloService){
+
+    return args -> helloService.greet();
+
   }
 
 }
