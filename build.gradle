@@ -7,11 +7,11 @@ buildscript {
 
 plugins {
   id 'org.springframework.boot' version '2.1.3.RELEASE'
-  id 'io.spring.dependency-management' version '1.0.7.RELEASE'
 }
 
 subprojects {
   apply plugin: 'java'
+  apply plugin: 'io.spring.dependency-management'
 
   group = 'com.example'
   version = '0.0.1-SNAPSHOT'
@@ -21,9 +21,15 @@ subprojects {
     mavenCentral()
   }
 
+  dependencyManagement {
+    imports {
+      mavenBom("org.springframework.boot:spring-boot-dependencies:$springBootVersion")
+    }
+  }
+
   dependencies {
-    compile "org.springframework.boot:spring-boot-starter:$springBootVersion"
-    testCompile "org.springframework.boot:spring-boot-starter-test:$springBootVersion"
+    compile "org.springframework.boot:spring-boot-starter"
+    testCompile "org.springframework.boot:spring-boot-starter-test"
   }
 }
 
