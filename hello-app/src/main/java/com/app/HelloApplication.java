@@ -12,11 +12,12 @@ import org.springframework.context.annotation.Bean;
 //          with Bean id "helloService") and run it again,
 //          verify it works
 
+
 // TODO-20: Now we are ready to leverage "hello-starter" project.
 //          First, we want to configure "TypicalHelloService" bean
 //          via "hello-starter" project instead of directly from
 //          "hello-lib" project.
-
+//
 // TODO-21: Comment out the explicit @Bean configuration you just
 //          added in the previous step
 //
@@ -51,7 +52,8 @@ import org.springframework.context.annotation.Bean;
 //            @Import({HelloAutoConfig.class, HelloAppConfig.class})
 //          - Run the application. This time, you will always see
 //            "MyOwnHelloService" bean always wins.
-//
+
+
 // TODO-30: Now we would like to change the behavior through
 //          auto-configuration so that the
 //          "TypicalHelloService" gets configured only when the
@@ -61,13 +63,15 @@ import org.springframework.context.annotation.Bean;
 //          So now the import statement should look like
 //          @Import({HelloAppConfig.class})
 //
+
+
 // TODO-35: Run the application again and see which one wins
 //          This time, "MyOwnHelloService" bean should win.
-
+//
 // TODO-36: In the console, search for "HelloAutoConfig" and
 //          see how auto-configuration is performed.
 //          You should see the one positive match and one negative match.
-
+//
 // TODO-37: Comment out @Import statement and run the application
 //          and observe that "TypicalHelloService" bean wins.
 //
