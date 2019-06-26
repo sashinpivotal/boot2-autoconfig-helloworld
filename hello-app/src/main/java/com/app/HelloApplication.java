@@ -6,6 +6,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+// TODO-10: Go to TO-DO-10 and TO-DO-11 in the setting.gradle file
+
 // TODO-15: Run the application and you will experience a
 //          failure of "'HelloService' that could not be found"
 // TODO-16: Fix the problem (add @Bean definition of "HelloService"
@@ -65,7 +67,8 @@ import org.springframework.context.annotation.Bean;
 //          So now the import statement should look like
 //          @Import({HelloAppConfig.class})
 //
-
+// TODO-32: Go to TO-DO-32 in the
+//          src/main/resources/META-INF/spring.factories file
 
 // TODO-35: Run the application again and see which one wins
 //          This time, "MyOwnHelloService" bean should win.
