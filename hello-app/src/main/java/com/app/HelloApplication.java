@@ -10,8 +10,9 @@ import org.springframework.context.annotation.Bean;
 //          failure of "'HelloService' that could not be found"
 // TODO-16: Fix the problem (add @Bean definition of "HelloService"
 //          with Bean id "helloService") and run it again,
-//          verify it works
-
+//          verify it works.
+//
+//          Once this step is done, go to TO-DO-20 below
 
 // TODO-20: Now we are ready to leverage "hello-starter" project.
 //          First, we want to configure "TypicalHelloService" bean
@@ -53,6 +54,7 @@ import org.springframework.context.annotation.Bean;
 //          - Run the application. This time, you will always see
 //            "MyOwnHelloService" bean always wins.
 
+//          - Once this step is done, go to TO-DO-30 below
 
 // TODO-30: Now we would like to change the behavior through
 //          auto-configuration so that the
