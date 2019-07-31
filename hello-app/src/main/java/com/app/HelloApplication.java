@@ -8,6 +8,8 @@ import org.springframework.context.annotation.Bean;
 
 // TODO-10: Go to TO-DO-10 and TO-DO-11 in the setting.gradle file
 
+// TODO-13: Go to TO-DO-13 in the build.gradle of the hello-app
+
 // TODO-15: Run the application and you will experience a
 //          failure of "'HelloService' that could not be found"
 // TODO-16: Fix the problem (add @Bean definition of "HelloService"
@@ -23,6 +25,8 @@ import org.springframework.context.annotation.Bean;
 //
 // TODO-21: Comment out the explicit @Bean configuration you just
 //          added in the previous step
+//
+// TODO-22: Go to TO-DO-22 in the build.gradle of the hello-app
 //
 // TODO-25: Import the configuration class of "hello-starter"
 //          - Add the following statement
@@ -88,19 +92,18 @@ import org.springframework.context.annotation.Bean;
 
 public class HelloApplication {
 
-  public static void main(String[] args) {
-    SpringApplication.run(HelloApplication.class, args);
-  }
+	public static void main(String[] args) {
+		SpringApplication.run(HelloApplication.class, args);
+	}
 
-  // TODO-14: Review CommandLineRunner code below
-  //          in which you are going to say greeting via
-  //          injected HelloService
-  @Bean
-  public CommandLineRunner commandLineRunner(HelloService helloService){
+	// TODO-14: Review CommandLineRunner code below
+	// in which you are going to say greeting via
+	// injected HelloService
+	@Bean
+	public CommandLineRunner commandLineRunner(HelloService helloService) {
 
-    return args -> helloService.greet();
+		return args -> helloService.greet();
 
-  }
+	}
 
 }
-
