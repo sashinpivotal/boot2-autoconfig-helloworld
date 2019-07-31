@@ -3,12 +3,19 @@
 !gradle/wrapper/gradle-wrapper.jar
 
 ### STS ###
-.apt_generated
-.classpath
-.factorypath
 .project
-.settings
-.springBeans
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
 
 ### IntelliJ IDEA ###
 .idea
